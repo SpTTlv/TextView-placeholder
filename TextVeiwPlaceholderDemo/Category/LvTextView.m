@@ -24,7 +24,10 @@
     textV.font = [UIFont systemFontOfSize:font];
     return textV;
 }
-
+- (void)awakeFromNib
+{
+    [self setUp];
+}
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
